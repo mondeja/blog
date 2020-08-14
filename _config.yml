@@ -1,8 +1,8 @@
 title: mondeja
 email: mondejar1994@gmail.com
 description: Álvaro Mondéjar Rubio's personal blog and portfolio
-baseurl: blog/
-url: http://mondeja.github.io/
+baseurl: /blog
+url: http://mondeja.github.io
 encoding: utf-8
 timezone: Europe/Madrid
 
