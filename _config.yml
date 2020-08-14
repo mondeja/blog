@@ -1,0 +1,40 @@
+title: mondeja
+email: mondejar1994@gmail.com
+description: Álvaro Mondéjar Rubio's personal blog and portfolio
+baseurl:
+url: "http://mondeja.github.io/"
+encoding: utf-8
+timezone: Europe/Madrid
+
+# Web services
+google_analytics: UA-XXXXXX-X
+
+# Author
+author:
+  name: Álvaro Mondéjar Rubio
+  email: mondejar1994@gmail.com
+  github_username: mondeja
+  bitbucket_username: mondeja
+  stackexchange_id: 12547690
+  telegram_username: amondejar
+  twitter_username:
+  facebook_username:
+  linkedin_username:
+  meetup_name:
+
+# Directories
+dir:
+  images: /assets/img
+  favicons: /assets/img/favicons
+  css: /assets/css
+  js: /assets/js
+  files: /assets/files
+
+# Styling
+assets:
+  # relative from images folder (site.dir.images)
+  background_image: header-background.jpg
+  thumbnail_image: profile-thumbnail.jpg
+
+  # relative from files folder (site.dir.files)
+  cv: cv-es.pdf

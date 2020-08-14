@@ -1,0 +1,29 @@
+---
+---
+
+@import "minimal-uno";
+@import "timeline";
+@import "palette";
+
+a {
+  text-decoration: none;
+  color: $links-color;
+}
+a:hover {
+  color: $links-hover-color;
+}
+
+a svg path {
+  fill: $links-color;
+}
+a svg path:hover {
+  fill: $links-hover-color;
+}
+
+::selection {
+	background: $selection-color;
+}
+
+::-moz-selection {
+	background: $selection-color;
+}

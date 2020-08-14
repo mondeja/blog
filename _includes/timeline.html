@@ -1,0 +1,52 @@
+<main class="timeline-wrapper" style="display:none;">
+  <div class="timeline-wrapper__inner">
+
+    <ul class="timeline">
+      {% for project in site.data.projects %}
+        <li class="timeline-inverted">
+          <div class="timeline-image">
+            <img src="{{ project.img | prepend: site.baseurl }}" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>
+                <a href="https://github.com/{{ project.github.username }}/{{ project.github.repository }}"
+                   target="_blank">{{ project.name }}</a>
+              </h4>
+            </div>
+            <div class="timeline-body">
+              {{ project.desc | markdownify }}
+
+              <div user="{{ project.github.username }}" repo="{{ project.github.repository }}" class="ghbtn" style="margin-top: 10px;">
+                <a target="_blank"
+                   href="https://github.com/{{ project.github.username }}/{{ project.github.repository }}/stargazers">
+                  <svg height="20" viewBox="0 0 16 16" width="20" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path>
+                  </svg>
+                  <span class="star"> ...</span>
+                </a>&emsp;&emsp;
+
+                <a target="_blank"
+                   href="https://github.com/{{ project.github.username }}/{{ project.github.repository }}/network">
+                   <svg height="20" viewBox="0 0 1792 1792" width="20" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M672 1472q0-40-28-68t-68-28-68 28-28 68 28 68 68 28 68-28 28-68zm0-1152q0-40-28-68t-68-28-68 28-28 68 28 68 68 28 68-28 28-68zm640 128q0-40-28-68t-68-28-68 28-28 68 28 68 68 28 68-28 28-68zm96 0q0 52-26 96.5t-70 69.5q-2 287-226 414-68 38-203 81-128 40-169.5 71t-41.5 100v26q44 25 70 69.5t26 96.5q0 80-56 136t-136 56-136-56-56-136q0-52 26-96.5t70-69.5v-820q-44-25-70-69.5t-26-96.5q0-80 56-136t136-56 136 56 56 136q0 52-26 96.5t-70 69.5v497q54-26 154-57 55-17 87.5-29.5t70.5-31 59-39.5 40.5-51 28-69.5 8.5-91.5q-44-25-70-69.5t-26-96.5q0-80 56-136t136-56 136 56 56 136z"/>
+                   </svg>
+                   <span class="fork"> ...</span>
+                </a>&emsp;&emsp;
+
+                <a target="_blank"
+                   href="https://github.com/{{ project.github.username }}/{{ project.github.repository }}/watchers">
+                   <svg height="20" viewBox="0 0 1792 1792" width="20" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M1664 960q-152-236-381-353 61 104 61 225 0 185-131.5 316.5t-316.5 131.5-316.5-131.5-131.5-316.5q0-121 61-225-229 117-381 353 133 205 333.5 326.5t434.5 121.5 434.5-121.5 333.5-326.5zm-720-384q0-20-14-34t-34-14q-125 0-214.5 89.5t-89.5 214.5q0 20 14 34t34 14 34-14 14-34q0-86 61-147t147-61q20 0 34-14t14-34zm848 384q0 34-20 69-140 230-376.5 368.5t-499.5 138.5-499.5-139-376.5-368q-20-35-20-69t20-69q140-229 376.5-368t499.5-139 499.5 139 376.5 368q20 35 20 69z"/>
+                   </svg>
+                   <span class="watchers">...</span>
+                </a>
+
+                <div style="height: 10px;"></div>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</main>
