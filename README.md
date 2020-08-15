@@ -26,7 +26,8 @@ Forked from [jekyll-uno-timeline](https://github.com/tzuehlke/jekyll-uno-timelin
 
 - [x] Include mobile buttons menu in panel for smaller screens.
 - [x] Replace the default favicon with my own thumbnail.
-- [ ] Include a language selector and translate the page from English to Spanish and French.
+- [x] Translate the page from English to Spanish and French.
+- [ ] Include a language selector.
 - [ ] Render my CV with Latex in multiples languages at building step and serve the PDF files accordingly to the user language.
 - [ ] Include a button to hide the timeline at the header right.
 - [ ] Include a posts list that will be shown under the current page when user clicks on the buttom `Blog` .

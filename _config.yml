@@ -23,10 +23,20 @@ author:
 plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
-exclude: ['scripts', 'vendor', 'README.md', 'LICENSE', 'Rakefile']
+exclude: [
+  'scripts',
+  'vendor',
+  'README.md',
+  'LICENSE',
+  'Rakefile',
+  'Gemfile',
+  'Gemfile.lock',
+  'package-lock.json'
+]
 
 # Internacionalization
 languages: ["en", "es", "fr"]
+default_locale_in_subfolder: true
 exclude_from_localizations: [
   "assets/css",  # does not work in `_includes/*.html` files (see `scripts/build.rb`)
   "assets/js",
