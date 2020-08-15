@@ -12,6 +12,7 @@ Forked from [jekyll-uno-timeline](https://github.com/tzuehlke/jekyll-uno-timelin
 2. `bundle install`
 3. Configure your personal information in `_config.yml`.
 4. Configure your Github projects timeline in `_data/projects.yml`.
+5. Generate your favicons using a tool like [favicon-generator](https://www.favicon-generator.org/), place your favicons at `assets/img/favicons/` directory and edit the include file `_includes/head.html` to point at your favicons. When you will serve in production, use a favicon checker like [this](https://realfavicongenerator.net/favicon_checker) to check if all are included. 
 
 ## Commands
 
@@ -20,7 +21,7 @@ Forked from [jekyll-uno-timeline](https://github.com/tzuehlke/jekyll-uno-timelin
 
 ## TODO
 
-- [ ] Include mobile icons in panel for smaller screens.
+- [x] Include mobile buttons menu in panel for smaller screens.
 - [ ] Replace the default favicon with my own thumbnail.
 - [ ] Include a posts list that will be shown under the current page when user clicks on the buttom `Blog` .
 - [ ] Include a language selector and translate the page from English to Spanish and French.
