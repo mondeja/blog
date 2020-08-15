@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.6'
       - uses: sterlingwes/gh-pages-deploy-action@v1.1
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
