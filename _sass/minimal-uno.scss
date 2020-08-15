@@ -550,13 +550,16 @@ nav {
     .navigation {
       li {
         display: inline-block;
-    		width: 25.8%;
+    		width: 30px;
       }
     }
   }
 }
 
 /* -------------------------------- */
+
+
+/* ------  menu for mobiles  ------*/
 
 .btn-mobile-menu {
 	display: none;
@@ -571,3 +574,16 @@ nav {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	text-align: center;
 }
+
+.btn-mobile-menu svg {
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+@media all and (max-width: 960px) {
+	.btn-mobile-menu {
+		display: block;
+  }
+}
+
+/* -------------------------------- */

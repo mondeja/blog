@@ -1,6 +1,6 @@
 # mondeja's blog
 
-My personal portfolio and (cooming soon) blog, see it [here](https://mondeja.github.io/blog)). Built with [Jekyll](https://jekyllrb.com) and served with [Github Pages](https://pages.github.com/).
+My personal portfolio and (cooming soon) blog, see it [here](https://mondeja.github.io/blog). Built with [Jekyll](https://jekyllrb.com) and served with [Github Pages](https://pages.github.com/).
 
 Forked from [jekyll-uno-timeline](https://github.com/tzuehlke/jekyll-uno-timeline) and customized to improve the loading time and fit me needs. You can use it as your own, but doesn't public my personal identity.
 
@@ -15,7 +15,8 @@ Forked from [jekyll-uno-timeline](https://github.com/tzuehlke/jekyll-uno-timelin
 
 ## Commands
 
-- `bundle exec jekyll serve`: Run the server locally.
+- **Build**: `bundle exec scripts/build.rb`
+- **Serve**: `bundle exec jekyll serve`
 
 ## TODO
 
