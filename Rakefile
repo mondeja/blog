@@ -1,24 +1,18 @@
-#!/usr/bin/env ruby
 
 require 'fileutils'
 require 'pathname'
 
 require 'jekyll'
 
-$site_conf = nil
-
-def load_site_config
+desc 'Builds _site in development'
+task :build do
     $site_conf = Jekyll.configuration({
         'source'      => '.',
         'destination' => '_site'
     })
-end
 
-def build_site
     Jekyll::Site.new($site_conf).process
-end
 
-def exclude_from_localizations
     # exclude_from_localizations settings seems not to work
     #   using static files on includes, so we need to remove the folders
     #   kurtsson/jekyll-multiple-languages-plugin#166
@@ -43,14 +37,4 @@ def exclude_from_localizations
             end
         end
     end
-end
-
-def main
-    load_site_config
-    build_site
-    exclude_from_localizations
-end
-
-if __FILE__ == $0
-    main
 end

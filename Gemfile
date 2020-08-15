@@ -2,6 +2,10 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 4.1.1"
 
+group :development do
+  gem "rake", "~> 13.0"
+end
+
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.13.0"
   gem "jekyll-multiple-languages-plugin", "~> 1.7.0"
