@@ -2,7 +2,7 @@
   <div class="timeline-wrapper__inner">
 
     <ul class="timeline">
-      {% for project in site.data.projects %}
+      {% for project in site.translations[site.lang].timeline %}
         <li class="timeline-inverted">
           <div class="timeline-image">
             <img src="{{ project.img }}" alt="">

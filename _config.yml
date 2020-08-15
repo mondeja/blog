@@ -23,7 +23,7 @@ author:
 plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
-exclude: ['scripts', 'vendor', 'README.md', 'LICENSE']
+exclude: ['scripts', 'vendor', 'README.md', 'LICENSE', 'Rakefile']
 
 # Internacionalization
 languages: ["en", "es", "fr"]
@@ -39,7 +39,6 @@ google_analytics: UA-XXXXXX-X
 
 # Directories
 dir:
-  favicons: /assets/img/favicons
   files: /assets/files
 
 # Asset filenames configuration

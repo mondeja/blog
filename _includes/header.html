@@ -14,7 +14,7 @@
           <h1 class="panel-cover__title">{{ site.title }}</h1>
         </a>
         <hr class="panel-cover__divider">
-        <p class="panel-cover__description">Working at <a href="https://www.afrontagroup.com">Afronta Group</a> as GIS fullstack web developer.</p>
+        <p class="panel-cover__description">{% t header.description | markdownify %}</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary">
 
         <div class="navigation-wrapper">
@@ -118,13 +118,14 @@
           <nav class="cover-navigation">
             <ul class="navigation">
               <!--<li class="navigation__item">
-                <a href="{{ site.baseurl }}/#blog">Blog</a>
+                <a href="{{ site.baseurl }}/#blog">{% t header.blog %}</a>
               </li>-->
               <li class="navigation__item">
-                <a href="{{ site.baseurl }}/#projects" class="projects-button">Projects</a>
+                <a href="{{ site.baseurl }}/#projects" class="projects-button">{% t header.projects %}</a>
               </li>
               <li class="navigation__item">
-                <a href="{{ site.baseurl }}{{ site.dir.files }}/{{ site.assets.cv }}">CV</a>
+                <!--<a href="{{ site.baseurl }}{{ site.dir.files }}/cv-{{ site.lang }}.pdf">{% t header.cv %}</a>-->
+                <a href="{{ site.baseurl }}{{ site.dir.files }}/{{ site.assets.cv }}">{% t header.cv %}</a>
               </li>
             </ul>
           </nav>

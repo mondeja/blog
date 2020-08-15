@@ -21,24 +21,24 @@
   {% if site.author.twitter_username %}
   <meta name="twitter:creator" content="{{ site.author.twitter_username }}">
   {% endif %}
-  <meta name="twitter:image" content="{{ site.baseurl }}{{ site.dir.favicons }}/favicon-194x194.png" />
+  <meta name="twitter:image" content="{{ '/assets/img/favicons/favicon-194x194.png' | prepend: site.baseurl_root }}" />
 
   <meta property="og:type" content="article">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="og:image" content="{{ site.baseurl }}{{ site.dir.favicons }}/favicon-96x96.png" />
+  <meta property="og:image" content="{{ '/assets/img/favicons/favicon-96x96.png' | prepend: site.baseurl_root }}" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}{{ site.dir.favicons }}/apple-touch-icon.png?v=1.0.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}{{ site.dir.favicons }}/favicon-32x32.png?v=1.0.0">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}{{ site.dir.favicons }}/favicon-16x16.png?v=1.0.0">
-  <link rel="manifest" href="{{ site.baseurl }}{{ site.dir.favicons }}/site.webmanifest?v=1.0.0">
-  <link rel="mask-icon" href="{{ site.baseurl }}{{ site.dir.favicons }}/safari-pinned-tab.svg?v=1.0.0" color="#5bbad5">
-  <link rel="shortcut icon" href="{{ site.baseurl }}{{ site.dir.favicons }}/favicon.ico?v=1.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/favicons//apple-touch-icon.png?v=1.0.0' | prepend: site.baseurl_root }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicons/favicon-32x32.png?v=1.0.0' | prepend: site.baseurl_root }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/img/favicons/favicon-16x16.png?v=1.0.0' | prepend: site.baseurl_root }}">
+  <link rel="manifest" href="{{ '/assets/img/favicons/site.webmanifest?v=1.0.0' | prepend: site.baseurl_root }}">
+  <link rel="mask-icon" href="{{ '/assets/img/favicons/safari-pinned-tab.svg?v=1.0.0' | prepend: site.baseurl_root }}" color="#5bbad5">
+  <link rel="shortcut icon" href="{{ '/assets/img/favicons/favicon.ico?v=1.0.0' | prepend: site.baseurl_root }}">
   <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
   <meta name="application-name" content="{{ site.title }}">
   <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-TileImage" content="{{ site.baseurl }}{{ site.dir.favicons }}/mstile-144x144.png?v=1.0.0">
-  <meta name="msapplication-config" content="{{ site.baseurl }}{{ site.dir.favicons }}/browserconfig.xml?v=1.0.0">
+  <meta name="msapplication-TileImage" content="{{ '/assets/img/favicons/mstile-144x144.png?v=1.0.0' | prepend: site.baseurl_root }}">
+  <meta name="msapplication-config" content="{{ '/assets/img/favicons/browserconfig.xml?v=1.0.0' | prepend: site.baseurl_root }}">
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl_root }}?{{ site.time | date: '%s%N' }}">

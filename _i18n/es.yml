@@ -1,0 +1,35 @@
+header:
+  description: Trabajando en [Grupo Afronta SL](https://www.afrontagroup.com) como desarrollador web SIG fullstack
+  blog: Blog
+  projects: Proyectos
+  cv: CV
+
+timeline:
+  -
+    name: svg-path-bbox
+    github:
+      username: mondeja
+      repository: svg-path-bbox
+    img: https://raw.githubusercontent.com/mondeja/svg-path-bbox/master/svg-path-bbox.png
+    desc: Calculador Javascript de cajas de encuadre para paths SVG
+  -
+    name: polf
+    github:
+      username: mondeja
+      repository: polf
+    img: https://raw.githubusercontent.com/mondeja/polf/master/polf-linexy.png
+    desc: Funciones Javascript de cálculo de puntos en líneas
+  -
+    name: pgdoc-datatype-parser
+    github:
+      username: mondeja
+      repository: pgdoc-datatype-parser
+    img: https://raw.githubusercontent.com/mondeja/pgdoc-datatype-parser/master/pgdoc-datatypes-parsed.png
+    desc: Parser Python de la [tabla de la documentación](https://www.postgresql.org/docs/current/datatype.html) de tipos de datos PostgreSQL para todas las versiones a partir de la 6.3
+  -
+    name: cartocss-doc-parser
+    github:
+      username: mondeja
+      repository: cartocss-doc-parser
+    img: https://raw.githubusercontent.com/mondeja/cartocss-doc-parser/master/cartocss-doc-parsed.png
+    desc: Parser Python para las propiedades de la [documentación de estilo de CartoCSS](https://carto.com/developers/styling/cartocss/)
