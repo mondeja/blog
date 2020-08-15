@@ -4,13 +4,13 @@
   </svg>
 </span>
 
-<header class="panel-cover" style="background-image: url({{ site.baseurl }}{{ site.dir.images }}/{{ site.assets.background_image }})">
+<header class="panel-cover" style="background-image: url({{ '/assets/img/header-background.jpg' | prepend: site.baseurl_root }})">
   <div class="panel-main">
 
     <div class="panel-main__inner panel-inverted">
       <div class="panel-main__content">
         <a href="{{ site.baseurl }}/">
-          <img src="{{ site.baseurl }}{{ site.dir.images }}/{{ site.assets.thumbnail_image }}">
+          <img src="{{ '/assets/img/thumbnail.jpg' | prepend: site.baseurl_root }}"">
           <h1 class="panel-cover__title">{{ site.title }}</h1>
         </a>
         <hr class="panel-cover__divider">

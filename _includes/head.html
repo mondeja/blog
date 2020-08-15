@@ -41,8 +41,9 @@
   <meta name="msapplication-config" content="{{ site.baseurl }}{{ site.dir.favicons }}/browserconfig.xml?v=1.0.0">
   <meta name="theme-color" content="#ffffff">
 
-  <link rel="stylesheet" href="{{ site.baseurl }}{{ site.dir.css }}/main.css?{{site.time | date: '%s%N'}}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl_root }}?{{ site.time | date: '%s%N' }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl_root }}">
+
   {% if site.google_analytics %}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
@@ -54,4 +55,5 @@
       gtag('config', '{{ site.google_analytics }}');
     </script>
   {% endif %}
+
 </head>

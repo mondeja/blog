@@ -6,9 +6,6 @@ url: http://mondeja.github.io
 encoding: utf-8
 timezone: Europe/Madrid
 
-# Web services
-google_analytics: UA-XXXXXX-X
-
 # Author
 author:
   name: Álvaro Mondéjar Rubio
@@ -22,19 +19,30 @@ author:
   linkedin_username:
   meetup_name:
 
+# Jekyll configuration
+plugins:
+  - jekyll-feed
+  - jekyll-multiple-languages-plugin
+exclude: ['scripts', 'vendor', 'README.md', 'LICENSE']
+
+# Internacionalization
+languages: ["en", "es", "fr"]
+exclude_from_localizations: [
+  "assets/css",  # does not work in `_includes/*.html` files (see `scripts/build.rb`)
+  "assets/js",
+  "assets/fonts",
+  "assets/img",
+]
+
+# Web services
+google_analytics: UA-XXXXXX-X
+
 # Directories
 dir:
-  images: /assets/img
   favicons: /assets/img/favicons
-  css: /assets/css
-  js: /assets/js
   files: /assets/files
 
-# Styling
+# Asset filenames configuration
 assets:
-  # relative from images folder (site.dir.images)
-  background_image: header-background.jpg
-  thumbnail_image: profile-thumbnail.jpg
-
   # relative from files folder (site.dir.files)
   cv: cv-es.pdf

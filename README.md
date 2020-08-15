@@ -4,15 +4,16 @@ My personal portfolio and (cooming soon) blog, see it [here](https://mondeja.git
 
 Forked from [jekyll-uno-timeline](https://github.com/tzuehlke/jekyll-uno-timeline) and customized to improve the loading time and fit me needs. You can use it as your own, but doesn't public my personal identity.
 
-## Setup
+## Setup (Linux)
 
 > Ruby >= 2.5 required. 
 
 1. `gem install bundle`
-2. `bundle install`
+2. `bundle config set path 'vendor/bundle' && bundle install`
 3. Configure your personal information in `_config.yml`.
 4. Configure your Github projects timeline in `_data/projects.yml`.
-5. Generate your favicons using a tool like [favicon-generator](https://realfavicongenerator.net/), place your favicons at `assets/img/favicons/` directory and edit the include file `_includes/head.html` to point at your favicons. When you will serve in production, use a favicon checker like [this](https://realfavicongenerator.net/favicon_checker) to check if all are included. 
+5. Replace the default thumbnail (`assets/img/thumbnail.jpg`) and header background (`assets/img/header-background.jpg`) images and update the sources if needed in `_includes/header.html`. 
+6. Generate your favicons using a tool like [favicon-generator](https://realfavicongenerator.net/), place your favicons at `assets/img/favicons/` directory and edit the include file `_includes/head.html` to point at your favicons. When you will serve in production, use a favicon checker like [this](https://realfavicongenerator.net/favicon_checker) to check if all are included. 
 
 ## Commands
 
