@@ -19,4 +19,4 @@ jobs:
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           source-directory: _site
-          build-command: bundle exec rake build
+          build-command: bundle install && bundle exec rake build
