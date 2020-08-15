@@ -1,12 +1,13 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.1.1"
+gem "jekyll", "~> 3.9.0"
 
 group :development do
   gem "rake", "~> 13.0"
 end
 
 group :jekyll_plugins do
+  gem "github-pages", "~> 207"
   gem "jekyll-feed", "~> 0.13.0"
   gem "jekyll-multiple-languages-plugin", "~> 1.7.0"
 end

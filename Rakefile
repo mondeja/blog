@@ -13,9 +13,9 @@ task :build do
 
     Jekyll::Site.new($site_conf).process
 
-    # exclude_from_localizations settings seems not to work
+    # `exclude_from_localizations` setting seems that is not working
     #   using static files on includes, so we need to remove the folders
-    #   kurtsson/jekyll-multiple-languages-plugin#166
+    #   https://github.com/kurtsson/jekyll-multiple-languages-plugin/issues/166
 
     # folders to exlude
     exclude_folders = $site_conf['exclude_from_localizations']
