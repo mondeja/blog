@@ -15,8 +15,9 @@ jobs:
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: '2.6'
+      - run: bundle install
       - uses: sterlingwes/gh-pages-deploy-action@v1.1
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           source-directory: _site
-          build-command: bundle install && bundle exec rake build
+          build-command: bundle exec rake build
