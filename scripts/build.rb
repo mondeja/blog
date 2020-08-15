@@ -20,8 +20,7 @@ end
 
 def exclude_from_localizations
     # exclude_from_localizations settings seems not to work
-    #   using static files on includes, so remove the `css/` folders
-    #   included in localization folders
+    #   using static files on includes, so we need to remove the folders
     #   kurtsson/jekyll-multiple-languages-plugin#166
 
     # folders to exlude
