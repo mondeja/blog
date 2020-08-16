@@ -11,6 +11,9 @@ trim_trailing_whitespace = true
 [*.{py,rb}]
 indent_size = 4
 
+[Rakefile]
+indent_size = 4
+
 [*.{min.js,json}]
 insert_final_newline = false
 

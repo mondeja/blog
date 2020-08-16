@@ -22,6 +22,8 @@ author:
 # Jekyll configuration
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
   - jekyll-multiple-languages-plugin
 exclude: [
   'scripts',
@@ -47,11 +49,6 @@ exclude_from_localizations: [
 # Web services
 google_analytics: UA-XXXXXX-X
 
-# Directories
-dir:
+# Paths
+paths:
   files: /assets/files
-
-# Asset filenames configuration
-assets:
-  # relative from files folder (site.dir.files)
-  cv: cv-es.pdf

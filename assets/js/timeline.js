@@ -14,13 +14,13 @@ $(document).ready(function() {
       async: true,
       dataType: "json",
       success: function (data) {
-        console.log("data", data);
+        //console.log("data", data);
 
         var repo = $("div[repo='" + data.name + "']")
         repo.find("span[class='star']").html("&nbsp;" + data.stargazers_count);
         repo.find("span[class='fork']").html("&nbsp;" + data.forks_count);
         repo.find("span[class='watchers']").html("&nbsp;" + data.watchers_count);
-        repo.find("span[class='license']").html("&nbsp;" + data.license.spdx_id);
+        //repo.find("span[class='license']").html("&nbsp;" + data.license.spdx_id);
       }
     })
   }
